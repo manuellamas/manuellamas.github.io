@@ -1,0 +1,54 @@
+/* Body */
+body {
+    max-width: 40em;
+    margin: 0 auto;
+    background-color: #000000;
+    color:#c0d6e4;
+    /* padding:5px;
+	font-family:Georgia,serif;
+	font-size:20px;
+	line-height:30px; */
+}
+
+a {
+    text-decoration: none;
+    overflow-wrap: break-word; /* To wrap the lines */
+    color:#4D84C4;
+}
+
+a:visited {
+    color:#4D84C4;
+    /* color:#6f9cd0; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/******************** Navigation Bar ********************/
+.navbar {
+    background-color: #202020;
+    overflow: hidden;
+}
+
+/* Links in navbar */
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar a:hover {
+    background-color: #ddd;
+    color: red;
+}
+  
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
