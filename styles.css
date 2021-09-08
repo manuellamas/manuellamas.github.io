@@ -28,7 +28,7 @@ a:hover {
 
 /******************** Navigation Bar ********************/
 .navbar {
-    background-color: #202020;
+    /* background-color: #202020; */
     overflow: hidden;
 }
 
@@ -38,8 +38,9 @@ a:hover {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    margin: 0em;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
   
 .navbar a:hover {
@@ -48,7 +49,10 @@ a:hover {
 }
   
 .navbar a.active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
     color: white;
 }
 
+h2 {
+    margin-top: 2em;
+}
