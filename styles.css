@@ -6,8 +6,9 @@ body {
     color:#c0d6e4;
     padding:5px;
 	/* font-family:Georgia, serif; */
+	font-family:"Noto Sans";
 	font-size:20px;
-	/* line-height:30px; */
+	line-height:30px; /* Spacing between each line */
 }
 
 /* Create a specific bold */
@@ -32,6 +33,13 @@ h2 {
 /* Links */
 a {
     text-decoration: none;
+    
+    /* Experiment with the below atributes */
+    /* text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .2em; */
     overflow-wrap: break-word; /* To wrap the lines */
     color:#4D84C4;
 }
