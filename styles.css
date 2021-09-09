@@ -13,7 +13,7 @@ body {
 
 /* Create a specific bold */
 
-#home {
+.main-title {
     margin-top: 2em;
     text-align: center;
 }
