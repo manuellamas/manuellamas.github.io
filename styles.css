@@ -14,7 +14,8 @@ body {
 /* Create a specific bold */
 
 .main-title {
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 2em;
     text-align: center;
 }
 
@@ -61,7 +62,7 @@ a:hover {
 
 .navbar a {
     float: left;
-    color: #f2f2f2;
+    color: #c0d6e4;
     text-align: center;
     padding: 14px 16px;
     margin: 0em;
@@ -71,10 +72,10 @@ a:hover {
   
 .navbar a:hover {
     /* background-color: #ddd; */
-    color: red;
+    color: #4D84C4;
 }
   
-.navbar a.active {
+.navbar a:active {
     /* background-color: #04AA6D; */
     color: white;
 }
