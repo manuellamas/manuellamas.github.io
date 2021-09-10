@@ -1,14 +1,32 @@
 /* Body */
 body {
+    margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */
+    padding:0px;
+    background-color: #000000;
+}
+
+.main {
     max-width: 50em;
     margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */
+    padding:5px;
     background-color: #000000;
     color:#c0d6e4;
-    padding:5px;
-	/* font-family:Georgia, serif; */
-	font-family:"Noto Sans";
+	font-family:"Noto Sans", Georgia;
 	font-size:18px;
 	line-height:30px; /* Spacing between each line */
+}
+
+footer {
+    /* max-width: 50em; */
+    margin: 0 auto;
+    /* position:fixed; */
+    padding:5px;
+    min-height: 3em;
+
+    background-color: #202020;
+    color:#c0d6e4;
+	font-family:"Noto Sans", Georgia;
+	font-size:18px;
 }
 
 /* Bold */
