@@ -1,32 +1,44 @@
 /* Body */
 body {
     margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */
-    padding:0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
     background-color: #000000;
 }
 
 .main {
     max-width: 50em;
     margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */
-    padding:5px;
+    padding: 5px;
     background-color: #000000;
-    color:#c0d6e4;
-	font-family:"Noto Sans", Georgia;
-	font-size:18px;
-	line-height:30px; /* Spacing between each line */
+    color: #c0d6e4;
+	font-family: "Noto Sans", Georgia;
+	font-size: 18px;
+	line-height: 30px; /* Spacing between each line */
 }
 
 footer {
-    /* max-width: 50em; */
-    margin: 0 auto;
-    /* position:fixed; */
-    padding:5px;
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+    /* position: fixed; */
+    padding: 5px;
     min-height: 3em;
 
     background-color: #202020;
-    color:#c0d6e4;
-	font-family:"Noto Sans", Georgia;
-	font-size:18px;
+    color: #c0d6e4;
+	font-family: "Noto Sans", Georgia;
+	font-size: 18px;
+}
+
+.footer-links-section {
+    margin: auto 0 auto auto;
+    padding: 5px;
+}
+
+.footer-links {
+    padding: 0 5px;
 }
 
 /* Bold */
@@ -50,8 +62,8 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:15em;
-    height:auto;
+    width: 15em;
+    height: auto;
 }
 
 /* Links */
@@ -65,12 +77,12 @@ a {
     text-decoration-thickness: 1px;
     text-underline-offset: .2em; */
     overflow-wrap: break-word; /* To wrap the lines */
-    color:#4D84C4;
+    color: #4D84C4;
 }
 
 a:visited {
-    color:#4D84C4;
-    /* color:#6f9cd0; */
+    color: #4D84C4;
+    /* color: #6f9cd0; */
 }
 
 a:hover {
