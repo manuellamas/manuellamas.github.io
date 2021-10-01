@@ -1,10 +1,21 @@
+/* :root {
+    --body-width: ;
+} */
+
 html, body {
     height: 100%;
 }
 
+/* @media (max-width: 50em){
+    :root {
+        --body-width: ;
+    }
+    
+} */
+
 /* Body */
 body {
-    /* max-width: 50em; */
+    max-width: 50em;
     margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */
     padding: 0px;
     display: flex;
@@ -13,7 +24,8 @@ body {
 }
 
 .main {
-    max-width: 50em; /* Increase to other values 80em if I want to have more than just text*/
+    /* Increase to other values 80em if I want to have more than just text*/
+    /* max-width: 50em; */
     
     /* Top/Bot are 0, Right/Left are auto  */
     margin: 0 auto 100px auto;
@@ -29,7 +41,7 @@ body {
 
 /* ----- Footer Start ----- */
 footer {
-    width: 50em;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
