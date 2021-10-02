@@ -39,32 +39,6 @@ body {
     /* align-items: stretch; */
 }
 
-/* ----- Footer Start ----- */
-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto auto 0 auto;
-    padding: 5px;
-    min-height: 3em;
-
-    /* background-color: #202020; */
-    color: #c0d6e4;
-	font-family: "Noto Sans", Georgia;
-	font-size: 18px;
-}
-
-.footer-links-section {
-    /* margin: auto 0 auto auto; */
-    padding: 5px;
-}
-
-.footer-links {
-    padding: 0 5px;
-}
-/* ----- Footer End ----- */
-
 /* Bold */
 strong {
     color: #BCE844;
@@ -93,7 +67,6 @@ h2 {
 /* Links */
 a {
     text-decoration: none;
-    
     /* Experiment with the below atributes */
     /* text-decoration-line: underline;
     text-decoration-style: solid;
@@ -152,3 +125,55 @@ a:hover {
         color: #4D84C4;
     }
 }
+
+/* ----- Footer Start ----- */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto 0 auto;
+    padding: 5px;
+    min-height: 3em;
+
+    /* background-color: #202020; */
+    color: #c0d6e4;
+	font-family: "Noto Sans", Georgia;
+	font-size: 18px;
+}
+
+.footer-name{
+    padding: 0 5px;
+}
+
+.footer-mail{
+    padding: 0 5px;
+    font-size: 80%;
+    line-height: 100%;
+}
+
+.footer-mail a {
+    text-decoration: none;
+    color:#c0d6e4;
+}
+
+.footer-links-section {
+    /* margin: auto 0 auto auto; */
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer-links-section a:hover {
+    text-decoration: none;
+}
+
+.footer-links img{
+    padding: 0 5px;
+    width: 1.5em;
+}
+
+.filter-white{
+    filter: invert(100%) sepia(54%) saturate(2%) hue-rotate(117deg) brightness(112%) contrast(100%);
+}
+/* ----- Footer End ----- */
