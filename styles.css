@@ -1,23 +1,17 @@
-/* :root {
-    --body-width: ;
-} */
+:root {
+    --body-padding: 0px;
+}
 
 html, body {
     height: 100%;
 }
 
-/* @media (max-width: 50em){
-    :root {
-        --body-width: ;
-    }
-    
-} */
-
 /* Body */
 body {
-    max-width: 50em;
+    max-width: 60em;
     margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */
     padding: 0px;
+    padding: 0px var(--body-padding);
     display: flex;
     flex-direction: column;
     background-color: #000000;
@@ -136,8 +130,8 @@ footer {
     margin: auto auto 0 auto;
     padding: 5px;
     min-height: 3em;
-
     /* background-color: #202020; */
+
     color: #c0d6e4;
 	font-family: "Noto Sans", Georgia;
 	font-size: 18px;
@@ -177,3 +171,16 @@ footer {
     filter: invert(100%) sepia(54%) saturate(2%) hue-rotate(117deg) brightness(112%) contrast(100%);
 }
 /* ----- Footer End ----- */
+
+
+@media (max-width: 50em){
+    /* Not sure if defining variables here work since I'm at the "bottom" */
+    :root {
+        --body-padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+}
