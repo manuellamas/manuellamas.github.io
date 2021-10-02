@@ -1,5 +1,6 @@
 :root {
     --body-padding: 0px;
+    --main-width: 60em;
 }
 
 html, body {
@@ -9,6 +10,7 @@ html, body {
 /* Body */
 body {
     max-width: 60em;
+    /* width: 60em; */
     margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */
     padding: 0px;
     padding: 0px var(--body-padding);
@@ -23,8 +25,13 @@ body {
     
     /* Top/Bot are 0, Right/Left are auto  */
     margin: 0 auto 100px auto;
+    width: 95%;
+    /* width: var(--main-width); */
     
-    padding: 5px;
+    /* padding: 5px; */
+    /* Attempting to use the same metrics (% in this case) for both margin and padding on this element */
+    padding: 0.5%;
+
     background-color: #000000;
     color: #c0d6e4;
 	font-family: "Noto Sans", Georgia;
@@ -122,13 +129,17 @@ a:hover {
 
 /* ----- Footer Start ----- */
 footer {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Align the items at the same 'vertical level' */
     margin: auto auto 0 auto;
-    padding: 5px;
+ 
+    /* padding: 5px; */
+    /* Attempting to use the same metrics (% in this case) for both margin and padding on this element */
+    padding: 0.5%;
+    
     min-height: 3em;
     /* background-color: #202020; */
 
@@ -172,13 +183,10 @@ footer {
 }
 /* ----- Footer End ----- */
 
-
 @media (max-width: 50em){
-    /* Not sure if defining variables here work since I'm at the "bottom" */
     :root {
         --body-padding: 10px;
     }
-
     footer {
         flex-direction: column;
     }
