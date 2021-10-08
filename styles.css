@@ -183,6 +183,20 @@ footer {
 }
 /* ----- Footer End ----- */
 
+/* ----- About Section ----- */
+.about-me {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* ----- About Section End ----- */
+
+
+
+
+
 @media (max-width: 50em){
     :root {
         --body-padding: 10px;
@@ -190,5 +204,7 @@ footer {
     footer {
         flex-direction: column;
     }
-    
+    .about-me{
+        flex-direction: column;
+    }
 }
