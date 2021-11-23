@@ -93,6 +93,10 @@ a:hover {
     overflow: hidden;
 }
 
+.navbar-elements {
+    float: right;
+}
+
 .navbar a {
     float: left;
     color: #c0d6e4;
@@ -189,6 +193,9 @@ footer {
     align-items: center;
 }
 
+.about-me-text {
+    margin: 1.5em;
+}
 
 
 /* ----- About Section End ----- */
