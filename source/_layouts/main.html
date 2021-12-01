@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang=en-US>
+    <head>
+        <meta charset="UTF-8"> <!-- Character encoding, UT-8 recommended for HTML5 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To make it adapt the size depending on the device -->
+
+        <link rel="icon" href="media/micon.svg">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
+        <title>{{ page.title }}{% if page.title != "Manuel Lamas" %} | Manuel Lamas{% endif %}</title>
+    </head>
+
+    <body>
+        <div class="main">
+            {% include navigation.html %}
+            {{ content }}
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
