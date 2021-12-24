@@ -49,7 +49,11 @@ footer { width: 95%; display: flex; flex-direction: row; justify-content: space-
 
 /* ----- About Section End ----- */
 /* ----- Now ----- */
-.last-updated { padding-top: 50px; text-align: right; color: rgba(192, 214, 228, 0.73); }
+.last-updated { padding-top: 120px; text-align: right; color: rgba(192, 214, 228, 0.73); }
+
+.last-updated p { margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */ }
+
+.last-updated a { color: rgba(77, 132, 196, 0.73); }
 
 /* ----- Now End ----- */
 @media (max-width: 50em) { :root { --body-padding: 10px; } footer { flex-direction: column; } .about-me { flex-direction: column; } }

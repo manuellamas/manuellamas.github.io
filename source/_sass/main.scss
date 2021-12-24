@@ -160,10 +160,22 @@ footer {
 
 /* ----- Now ----- */
 .last-updated{
-    padding-top: 50px;
+    padding-top: 120px;
     text-align: right;
     color: rgba(192, 214, 228, 0.73);
+    // color: rgba(192, 214, 228, 0.73);
 }
+
+.last-updated p{
+    margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */    
+}
+
+.last-updated a{
+    color: rgba(77, 132, 196, 0.73);
+    // color: rgba(192, 214, 228, 0.73);
+}
+
+
 
 /* ----- Now End ----- */
 
