@@ -25,7 +25,7 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
     # Obtain a list of the file names of all .md files in the thoughts directory (in Obsidian).
     # Only those in the "root" and not in a subdirectory. So be careful if you plan to place them on subfolders
     list_files = [f for f in listdir(vault_directory) if (os.path.isfile(os.path.join(vault_directory, f)) and f[-2:]) == "md"]
-    
+
     date = "" # Initializing the variable
     note_title = ""
 
@@ -54,12 +54,16 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
         print(note_title)
         print(post_title)
         note_file = open(vault_directory + "\\" + note_title, "r")
-        note_lines = note_file.readlines()[3:] # Ignores the first three lines
-        
-        yaml_header = "---\nlayout: post\n---\n" # To be added at the beginning of the file
+        note_lines = note_file.readlines()
+        note_content = note_lines[4:] # Ignores the first four lines (original yaml frontmatter)
+
+        # To be added at the beginning of the file
+        link_title = note_lines[2][6:-1].lower().replace(" ", "-")
+        link = "permalink: /" + link_title + ".html"
+        yaml_header = "---\nlayout: post\n" + link + "\n---\n"
         post_file.write(yaml_header)
 
-        for line in note_lines:
+        for line in note_content:
             post_file.write(line)
 
         # Close files
