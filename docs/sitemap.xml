@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/about.html</loc>
+<loc>https://manuellamas.github.io/about.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>https://manuellamas.github.io/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/now.html</loc>
+<loc>https://manuellamas.github.io/now.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/projects.html</loc>
+<loc>https://manuellamas.github.io/projects.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/thoughts.html</loc>
+<loc>https://manuellamas.github.io/thoughts.html</loc>
 </url>
 </urlset>
