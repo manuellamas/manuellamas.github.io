@@ -59,7 +59,7 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
 
         # To be added at the beginning of the file
         link_title = note_lines[2][6:-1].lower().replace(" ", "-")
-        link = "permalink: /" + link_title + ".html"
+        link = "permalink: /" + link_title
         yaml_header = "---\nlayout: post\n" + link + "\n---\n"
         post_file.write(yaml_header)
 
