@@ -1,0 +1,10 @@
+blockquote p{
+    font-style: italic;
+    // quotes: '"' '"';
+}
+blockquote p::before {
+    content: open-quote;
+}
+blockquote p::after {
+    content: close-quote;
+}
