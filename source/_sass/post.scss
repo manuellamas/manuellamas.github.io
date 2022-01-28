@@ -9,6 +9,7 @@ blockquote p::after {
     content: close-quote;
 }
 
-// .post-title {
-//     color: #4D84C4;
-// }
+.post-title {
+    // color: #4D84C4;
+    line-height: 100%;
+}
