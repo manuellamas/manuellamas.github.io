@@ -87,16 +87,3 @@ a:hover {
     text-decoration: underline;
 }
 
-
-// Responsiveness - Mobile size
-@media (max-width: 50em){
-    :root {
-        --body-padding: 10px;
-    }
-    footer {
-        flex-direction: column;
-    }
-    .about-me{
-        flex-direction: column;
-    }
-}

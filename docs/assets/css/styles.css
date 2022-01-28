@@ -24,8 +24,6 @@ a:visited { color: #4D84C4; /* color: #6f9cd0; */ }
 
 a:hover { text-decoration: underline; }
 
-@media (max-width: 50em) { :root { --body-padding: 10px; } footer { flex-direction: column; } .about-me { flex-direction: column; } }
-
 /* This must be below the main.css due to the general link formatting */
 /* Navigation Bar */
 .navbar { /* background-color: #202020; */ overflow: hidden; }
@@ -72,6 +70,8 @@ blockquote p { font-style: italic; }
 blockquote p::before { content: open-quote; }
 
 blockquote p::after { content: close-quote; }
+
+@media (max-width: 50em) { :root { --body-padding: 10px; } footer { flex-direction: column; } .about-me { flex-direction: column; } }
 
 /* @import "styles/main.css";
 @import "styles/navbar.css"; */
