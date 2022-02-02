@@ -1,4 +1,4 @@
-:root { --body-padding: 0px; --main-width: 60em; }
+:root { --body-padding: 0px; --main-width: 60em; --text-faded: rgba(192, 214, 228, 0.73); }
 
 html, body { height: 100%; }
 
@@ -59,7 +59,7 @@ footer { width: 95%; display: flex; flex-direction: row; justify-content: space-
 
 .about-me-text { margin: 1.5em; }
 
-.last-updated { padding-top: 120px; text-align: right; color: rgba(192, 214, 228, 0.73); }
+.last-updated { padding-top: 120px; text-align: right; color: var(--text-faded); }
 
 .last-updated p { margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */ }
 
@@ -72,6 +72,10 @@ blockquote p::before { content: open-quote; }
 blockquote p::after { content: close-quote; }
 
 .post-title { line-height: 100%; }
+
+.thoughts-post-title { margin-bottom: 0; }
+
+.thoughts-post-date { margin-top: 0; font-size: 0.75em; color: var(--text-faded); }
 
 @media (max-width: 50em) { :root { --body-padding: 10px; } footer { flex-direction: column; } .about-me { flex-direction: column; } }
 

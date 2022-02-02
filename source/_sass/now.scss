@@ -1,8 +1,7 @@
 .last-updated{
     padding-top: 120px;
     text-align: right;
-    color: rgba(192, 214, 228, 0.73);
-    // color: rgba(192, 214, 228, 0.73);
+    color: var(--text-faded);
 }
 
 .last-updated p{
@@ -11,5 +10,4 @@
 
 .last-updated a{
     color: rgba(77, 132, 196, 0.73);
-    // color: rgba(192, 214, 228, 0.73);
 }
