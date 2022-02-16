@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /seeing-past-the-visible-progress
+permalink: /past-the-visible-progress
 ---
 It's easy to get unmotivated when we don't see progress.
 But progress isn't always visible.

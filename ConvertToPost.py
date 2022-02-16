@@ -62,6 +62,7 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
         link = "permalink: /" + link_title
         yaml_header = "---\nlayout: post\n" + link + "\n---\n"
         post_file.write(yaml_header)
+        print(link_title)
 
         for line in note_content:
             post_file.write(line)
