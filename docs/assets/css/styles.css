@@ -59,6 +59,8 @@ footer { width: 95%; display: flex; flex-direction: row; justify-content: space-
 
 .about-me-text { margin: 1.5em; }
 
+.project-media { display: block; margin: auto; width: 75%; height: auto; }
+
 .last-updated { padding-top: 120px; text-align: right; color: var(--text-faded); }
 
 .last-updated p { margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */ }
@@ -77,7 +79,7 @@ blockquote p::after { content: close-quote; }
 
 .thoughts-post-date { margin-top: 0; font-size: 0.75em; color: var(--text-faded); }
 
-@media (max-width: 50em) { :root { --body-padding: 10px; } footer { flex-direction: column; } .about-me { flex-direction: column; } }
+@media (max-width: 50em) { :root { --body-padding: 10px; } footer { flex-direction: column; } .about-me { flex-direction: column; } .project-media { width: 100%; } }
 
 /* @import "styles/main.css";
 @import "styles/navbar.css"; */
