@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /overthinking
+permalink: /2022/overthinking
 ---
 Hello, it's been... much longer than what I expected.
 My initial goal was to write one of these every Sunday, but as you can see, nearly a month as passed already.

@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /too-many-interests
+permalink: /2022/too-many-interests
 ---
 If you're like me, you're interested in *a lot* of things. And they grow by the day.
 Tons of things you want to do, make or learn.

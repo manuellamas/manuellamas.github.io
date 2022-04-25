@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /taking-initiative
+permalink: /2022/taking-initiative
 ---
 It's easy to just accept the status quo and work with it.
 But what if you had a better way of doing things? An idea that could change things for the better, no matter how little the scale.

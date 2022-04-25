@@ -1,3 +1,4 @@
+from sqlite3 import adapters
 import sys
 import os.path
 from os import listdir
@@ -7,25 +8,30 @@ import datetime
 Run the file with no arguments to convert the post note with today's date attribute
 OR
 Give an argument (date in format YYYY-mm-dd) to convert the note with that date attribute
+OR
+Give the argument "all" and it runs on all posts present (useful for some kind of global reformatting)
 """
 
+
+# Python File (Project) Location
+program_directory = os.path.dirname(__file__) # Where the Python script being ran is
+website_directory = os.path.split(program_directory)[0]
+projects_directory = os.path.split(website_directory)[0]
+m_directory = os.path.split(projects_directory)[0]
+
+# Obsidian original MD location
+vault_directory = m_directory + "\\Sihlbi_World\\Thoughts"
+
+# Website posts location
+posts_directory = program_directory + "\\source\\_posts"
+
+# Obtain a list of the file names of all .md files in the thoughts directory (in Obsidian).
+# Only those in the "root" and not in a subdirectory. So be careful if you plan to place them on subfolders
+list_files = [f for f in listdir(vault_directory) if (os.path.isfile(os.path.join(vault_directory, f)) and f[-2:]) == "md"]
+
+
+
 def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
-    # Python File (Project) Location
-    program_directory = os.path.dirname(__file__) # Where the Python script being ran is
-    website_directory = os.path.split(program_directory)[0]
-    projects_directory = os.path.split(website_directory)[0]
-    m_directory = os.path.split(projects_directory)[0]
-
-    # Obsidian original MD location
-    vault_directory = m_directory + "\\Sihlbi_World\\Thoughts"
-
-    # Website posts location
-    posts_directory = program_directory + "\\source\\_posts"
-
-    # Obtain a list of the file names of all .md files in the thoughts directory (in Obsidian).
-    # Only those in the "root" and not in a subdirectory. So be careful if you plan to place them on subfolders
-    list_files = [f for f in listdir(vault_directory) if (os.path.isfile(os.path.join(vault_directory, f)) and f[-2:]) == "md"]
-
     date = "" # Initializing the variable
     note_title = ""
 
@@ -59,6 +65,8 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
 
         # To be added at the beginning of the file
         link_title = note_lines[2][6:-1].lower().replace(" ", "-")
+        link_title = note_date[:-6] + "/" + link_title # Adding year on link as future-proof
+
         link = "permalink: /" + link_title
         yaml_header = "---\nlayout: post\n" + link + "\n---\n"
         post_file.write(yaml_header)
@@ -80,5 +88,37 @@ if __name__ == "__main__":
         obsidianToPost()
 
     else: # Searches for the note with the specified date
-        note_date = sys.argv[-1]
-        obsidianToPost(note_date)
+        if sys.argv[-1].lower() == "all": # Run on all posts
+            
+            # Obsidian original MD location
+            vault_directory = m_directory + "\\Sihlbi_World\\Thoughts"
+
+            # Website posts location
+            posts_directory = program_directory + "\\source\\_posts"
+
+            # Obtain a list of the file names of all .md files in the thoughts directory (in Obsidian).
+            # Only those in the "root" and not in a subdirectory. So be careful if you plan to place them on subfolders
+            print(vault_directory)
+            list_files = [f for f in listdir(vault_directory) if (os.path.isfile(os.path.join(vault_directory, f)) and f[-2:]) == "md"]
+
+            # Get Dates (just beacause that's the input that obsidianToPost allows)
+            list_file_dates = []
+            for i in range(len(list_files)):
+                file = open(vault_directory + "\\" + list_files[i], "r")
+
+                lines = file.readlines() # List with all the lines of the file
+                date_line = lines[1] # Second line of the file
+                file.close()
+
+                date = date_line.replace("date: ", "").replace("\n", "")
+                
+                if date != "":
+                    list_file_dates.append(date)
+
+            for date in list_file_dates: # Running on all files
+                obsidianToPost(date)
+                print("---\n")
+
+        else: # Running on specific file with the given date
+            note_date = sys.argv[-1]
+            obsidianToPost(note_date)
