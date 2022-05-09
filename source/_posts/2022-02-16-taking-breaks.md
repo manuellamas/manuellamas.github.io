@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /2022/taking-breaks
+permalink: /breaks
 ---
 We often think that the quickest way to get something done is to just spend more time doing it. But that's really not the case.
 

@@ -56,7 +56,8 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
 
     if note_title != "":
         # Checking if there's no note (already as on the website) has the same title or link
-        if check_same_title(note_date[:4], note_title, link_title):
+        # if check_same_title(note_date[:4], note_title, link_title):
+        if check_same_title(note_title, link_title):
             return
 
         # Create the .md file in the _posts directory
@@ -72,7 +73,7 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
 
         # To be added at the beginning of the file
         link_title = note_lines[2][6:-1].lower().replace(" ", "-")
-        link_title = note_date[:-6] + "/" + link_title # Adding year on link as future-proof
+        # link_title = note_date[:-6] + "/" + link_title # Adding year on link as future-proof
 
         if note_date == datetime.datetime.now().strftime("%Y-%m-%d"): # If the date is the one of today, update "latest" link
             update_latest(link_title)
@@ -102,8 +103,10 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
 
 
 
-def check_same_title(year, title, link):
-    """ Checks if there's already a post with the same title or link, in the same year """
+def check_same_title(title, link):
+    """ Checks if there's already a post with the same title or link """
+    # Now checking for all notes (and not just in the same year)
+    # def check_same_title(year, title, link):
 
     # Remove the file in question from the list. We're using the date itself 
     list_files_exclude = list_files[:] # Creating a copy of the list
@@ -116,23 +119,23 @@ def check_same_title(year, title, link):
         with open(vault_directory + "\\" + file, "r") as file_note:
             lines = file_note.readlines()
             date = lines[1][6:-1] # Getting the date
-            date_year = date[:4] # Getting the year
+            # date_year = date[:4] # Getting the year
 
-            if date != "" and date_year == year: # Checking only the files that have date, and the date year is the same
-                if file == title:
-                    print("There's already a file with that title")
-                    print(date)
-                    print(file) # Title
-                    print(lines[2][6:]) # Link
-                    same_title_link = True
-                    break
-                elif link == lines[2][6:]:
-                    print("There's already a file with that link")
-                    print(date)
-                    print(file) # Title
-                    print(lines[2][6:]) # Link
-                    same_title_link = True
-                    break
+            # if date != "" and date_year == year: # Checking only the files that have date, and the date year is the same
+            if file == title:
+                print("There's already a file with that title")
+                print(date)
+                print(file) # Title
+                print(lines[2][6:]) # Link
+                same_title_link = True
+                break
+            elif link == lines[2][6:]:
+                print("There's already a file with that link")
+                print(date)
+                print(file) # Title
+                print(lines[2][6:]) # Link
+                same_title_link = True
+                break
 
     return same_title_link
 
