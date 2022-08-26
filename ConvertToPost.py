@@ -88,7 +88,8 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
                     print("The link to latest wasn't updated.")
 
 
-        link = "permalink: /" + link_title
+        # link = "permalink: /" + link_title
+        link = "permalink: /" + note_date[:4] +  "/" + link_title
         yaml_header = "---\nlayout: post\n" + link + "\n---\n"
         post_file.write(yaml_header)
         print(link_title)
@@ -179,7 +180,7 @@ if __name__ == "__main__":
             print(vault_directory)
             list_files = [f for f in listdir(vault_directory) if (os.path.isfile(os.path.join(vault_directory, f)) and f[-2:]) == "md"]
 
-            # Get Dates (just beacause that's the input that obsidianToPost allows)
+            # Get Dates (just because that's the input that obsidianToPost allows)
             list_file_dates = []
             for i in range(len(list_files)):
                 file = open(vault_directory + "\\" + list_files[i], "r")
