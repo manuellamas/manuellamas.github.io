@@ -30,7 +30,7 @@ list_files = [f for f in listdir(vault_directory) if (os.path.isfile(os.path.joi
 
 
 
-def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
+def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all = False):
     """ Creates (or updates) a post in the website source files by getting the content
     from the Obsidian Note with the corresponding date (or if ommited the date of today)  """
     date = "" # Initializing the variable
@@ -75,16 +75,17 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d")):
         link_title = note_lines[2][6:-1].lower().replace(" ", "-")
         # link_title = note_date[:-6] + "/" + link_title # Adding year on link as future-proof
 
-        if note_date == datetime.datetime.now().strftime("%Y-%m-%d"): # If the date is the one of today, update "latest" link
-            update_latest(link_title)
-            print("The link to latest was updated to", link_title)
-        else:
-            reply = input("Is the thought being updated the latest? y/n\n")
-            if reply.lower() == "y":
+        if not all: # If we're not changing all thoughts
+            if note_date == datetime.datetime.now().strftime("%Y-%m-%d"): # If the date is the one of today, update "latest" link
                 update_latest(link_title)
                 print("The link to latest was updated to", link_title)
             else:
-                print("The link to latest wasn't updated.")
+                reply = input("Is the thought being updated the latest? y/n\n")
+                if reply.lower() == "y":
+                    update_latest(link_title)
+                    print("The link to latest was updated to", link_title)
+                else:
+                    print("The link to latest wasn't updated.")
 
 
         link = "permalink: /" + link_title
@@ -193,7 +194,7 @@ if __name__ == "__main__":
                     list_file_dates.append(date)
 
             for date in list_file_dates: # Running on all files
-                obsidianToPost(date)
+                obsidianToPost(date, all = True)
                 print("---\n")
 
         else: # Running on specific file with the given date
