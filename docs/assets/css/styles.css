@@ -15,8 +15,6 @@ strong { color: #BCE844; }
 
 h2 { margin-top: 2em; }
 
-#photo { display: block; margin-left: auto; margin-right: auto; width: 15em; height: auto; }
-
 /* Links */
 a { text-decoration: none; /* Experiment with the below atributes */ /* text-decoration-line: underline; text-decoration-style: solid; text-decoration-color: currentColor; text-decoration-thickness: 1px; text-underline-offset: .2em; */ overflow-wrap: break-word; /* To wrap the lines */ color: #4D84C4; }
 
@@ -58,6 +56,8 @@ footer { width: 95%; display: flex; flex-direction: row; justify-content: space-
 .about-me { display: flex; align-items: center; }
 
 .about-me-text { margin: 1.5em; }
+
+#photo { display: block; margin-left: auto; margin-right: auto; width: 15em; height: auto; border-radius: 5px; }
 
 .project-media { display: block; margin: auto; width: 75%; height: auto; }
 

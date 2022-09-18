@@ -6,3 +6,12 @@
 .about-me-text {
     margin: 1.5em;
 }
+
+#photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    height: auto;
+    border-radius: 5px; //  Rounding corners
+}
