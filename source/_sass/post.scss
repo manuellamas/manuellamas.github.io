@@ -14,6 +14,12 @@ blockquote p::after {
     line-height: 100%;
 }
 
+.post-date {
+    // color: #4D84C4;
+    color: var(--text-faded);
+    font-size: 15px;
+}
+
 // Thoughts Page
 .thoughts-post-title {
     margin-bottom: 0;

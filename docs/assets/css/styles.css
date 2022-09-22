@@ -88,6 +88,8 @@ blockquote p::after { content: close-quote; }
 
 .post-title { line-height: 100%; }
 
+.post-date { color: var(--text-faded); font-size: 15px; }
+
 .thoughts-post-title { margin-bottom: 0; }
 
 .thoughts-post-date { margin-top: 0; font-size: 0.75em; color: var(--text-faded); }
