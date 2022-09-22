@@ -3,7 +3,7 @@ layout: post
 permalink: /2022/facing-mistakes
 ---
 Not too long ago I encountered this Friedrich Nietzsche quote:
->Never yield to remorse, but at once tell yourself: remorse would simply mean **adding to the first act of stupidity a second**.
+>"Never yield to remorse, but at once tell yourself: remorse would simply mean **adding to the first act of stupidity a second**."
 
 We all make mistakes.
 How we respond to them is where we have a choice to make.
