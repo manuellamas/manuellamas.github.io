@@ -2,12 +2,12 @@ blockquote p{
     font-style: italic;
     // quotes: '"' '"';
 }
-blockquote p::before {
-    content: open-quote;
-}
-blockquote p::after {
-    content: close-quote;
-}
+// blockquote p::before {
+//     content: open-quote;
+// }
+// blockquote p::after {
+//     content: close-quote;
+// }
 
 .post-title {
     // color: #4D84C4;
