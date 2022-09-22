@@ -1,2 +1,6 @@
 # VSCode Workspace
 *.code-workspace
+
+# Jekyll cache
+.jekyll-cache
+
