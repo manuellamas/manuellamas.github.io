@@ -19,27 +19,3 @@
     text-decoration: none;
     font-size: 20px;
 }
-  
-.navbar a:hover {
-    /* background-color: #ddd; */
-    /* color: #4D84C4; */
-    /* Initiate an Animation */
-    animation-name: light-up;
-    animation-duration: 0.5s; /* The goal would be for it not to loop but instead stay with that color */
-    animation-fill-mode: forwards; /* Makes the animation end-state persist */
-}
-
-.navbar a:active {
-    /* background-color: #04AA6D; */
-    color: white;
-}
-
-@keyframes light-up {
-    0% {
-        color: #c0d6e4;
-    }
-
-    100% {
-        color: #4D84C4;
-    }
-}
