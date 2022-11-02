@@ -15,6 +15,8 @@ strong { color: #BCE844; }
 
 h2 { margin-top: 2em; }
 
+li { margin: 1em 0; }
+
 /* Links on text */
 a { text-decoration: none; /* Experiment with the below atributes */ /* text-decoration-line: underline; text-decoration-style: solid; text-decoration-color: currentColor; text-decoration-thickness: 1px; text-underline-offset: .2em; */ overflow-wrap: break-word; /* To wrap the lines */ color: #4D84C4; }
 
