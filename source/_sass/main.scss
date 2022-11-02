@@ -58,6 +58,11 @@ h2 {
     margin-top: 2em;
 }
 
+li {
+    // Done because of "Now" page. If I want it different somewhere else place this in now.scss
+    margin: 1em 0;
+}
+
 /* Links on text */
 a {
     text-decoration: none;
