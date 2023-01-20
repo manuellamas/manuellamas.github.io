@@ -19,7 +19,7 @@ permalink: /projects
 </div>
 
 <!-- <a href="#animated_plot_portugal_covid19">Animated plot - Portugal COVID-19 Daily New Cases</a> -->
-<div>
+<div class="project-div">
     <h4 id="animated_plot_portugal_covid19">Animated plot - Portugal COVID-19 Daily New Cases</h4>
     <p>I've been amazed by awesome data visualizations before, and so I thought I should try it out to see what I could do. This was my first time creating one.</p>
     <p>Here's an animated plot of Portugal's COVID-19 daily new cases. If you run the script from <a href="https://github.com/manuellamas/Portugal-COVID19-Plot">this repository</a>, it'll fetch the most recent data from <a href="https://ourworldindata.org/">Our World in Data</a> and create the animation.</p>
@@ -28,5 +28,23 @@ permalink: /projects
     <video controls muted class="project-media">
         <source src="assets/media/projects/Portugal_daily_new_cases.mp4" type="video/mp4">
     </video>
+</div>
 
+<div class="project-div">
+    <h4>Model visualization - Forest-fire Model</h4>
+    <p>
+        While reading <a href="https://www.goodreads.com/book/show/39088592-the-model-thinker">The Model Thinker</a> I encountared a few models that I wanted to try animating.
+        So here's one.
+    </p>
+    <p>
+        In the <a href="https://en.wikipedia.org/wiki/Forest-fire_model">Forest-fire Model</a> at each period a cell is chosen.
+        If it's empty there's a probability <i>p</i> that the space will be filled with a tree, and if there's already a tree there there's a probability <i>1-p</i> it'll burn.
+        If it burns then in the next period all trees in neighbour cells also burn.
+    </p>
+    <p>
+        The example below is for 3000 periods and <i>p = 0.95</i>.
+        Here's the <a href="https://github.com/manuellamas/Forest-Fire-Model">code</a> in case you want to try different sizes of the "field" and different probabilities.</p>
+    <video controls muted class="project-media">
+        <source src="assets/media/projects/Forest_fire_model.mp4" type="video/mp4">
+    </video>
 </div>
