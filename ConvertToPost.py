@@ -46,6 +46,7 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
         file.close()
 
         date = date_line.replace("date: ", "").replace("\n", "")
+        year = note_date[:4]
         # post_date = date_line[6:16]
 
         if date == note_date:
@@ -77,19 +78,19 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
 
         if not all: # If we're not changing all thoughts
             if note_date == datetime.datetime.now().strftime("%Y-%m-%d"): # If the date is the one of today, update "latest" link
-                update_latest(link_title)
+                update_latest(link_title, year)
                 print("The link to latest was updated to", link_title)
             else:
                 reply = input("Is the thought being updated the latest? y/n\n")
                 if reply.lower() == "y":
-                    update_latest(link_title)
+                    update_latest(link_title, year)
                     print("The link to latest was updated to", link_title)
                 else:
                     print("The link to latest wasn't updated.")
 
 
         # link = "permalink: /" + link_title
-        link = "permalink: /" + note_date[:4] +  "/" + link_title
+        link = "permalink: /" + year +  "/" + link_title
         yaml_header = "---\nlayout: post\n" + link + "\n---\n"
         post_file.write(yaml_header)
         print(link_title)
@@ -143,7 +144,7 @@ def check_same_title(title, link):
 
 
 
-def update_latest(link):
+def update_latest(link, year):
     """ Updates the latest.html source file to link to the newly created thought """
     latest_html_location = program_directory + "/source/latest.html" # Location of latest.html
 
@@ -153,7 +154,8 @@ def update_latest(link):
 
     # Editing the line with the link
     with open(latest_html_location, "w") as latest_html:
-        read_lines[5] = 'For the latest thought please follow <a href="https://manuellamas.github.io/' + link + '">this link</a>.'
+        read_lines[3] = 'meta-redirect: <meta http-equiv = "refresh" content = "0; url = https://manuellamas.github.io/' + year + "/"+ link + '" />' + '\n'
+        read_lines[5] = 'For the latest thought please follow <a href="https://manuellamas.github.io/' + year + "/"+ link + '">this link</a>.'
         # read_lines[5] = 'For the latest thought please follow <a href="https://manuellamas.github.io/2022/taking-initiative">this link</a>.'
         latest_html.writelines(read_lines)
 
