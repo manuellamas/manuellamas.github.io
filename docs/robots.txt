@@ -1,1 +1,1 @@
-Sitemap: https://manuellamas.github.io/sitemap.xml
+Sitemap: https://manuellamas.com/sitemap.xml

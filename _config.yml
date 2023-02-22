@@ -1,5 +1,5 @@
 source: ./source
 destination: ./docs
-url: https://manuellamas.github.io
+url: https://manuellamas.com
 kramdown:
   hard_wrap: false # "true" enables single line breaks
