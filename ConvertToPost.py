@@ -15,8 +15,7 @@ Give the argument "all" and it runs on all posts present (useful for some kind o
 # Python File (Project) Location
 program_directory = os.path.dirname(__file__) # Where the Python script being ran is
 website_directory = os.path.split(program_directory)[0]
-projects_directory = os.path.split(website_directory)[0]
-m_directory = os.path.split(projects_directory)[0]
+m_directory = "C:\\Users\\ManuelLamas\\Documents\\M"
 
 # Obsidian original MD location
 vault_directory = m_directory + "\\Sihlbi_World\\Thoughts"
@@ -89,8 +88,8 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
                     print("The link to latest wasn't updated.")
 
 
-        # link = "permalink: /" + link_title
-        link = "permalink: /" + year +  "/" + link_title
+        link = "permalink: /" + link_title
+        # link = "permalink: /" + year +  "/" + link_title
         yaml_header = "---\nlayout: post\n" + link + "\n---\n"
         post_file.write(yaml_header)
         print(link_title)

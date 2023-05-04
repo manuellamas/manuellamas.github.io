@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /2022/overplanning
+permalink: /oplan
 ---
 Planning an unfeasible list of tasks to achieve on a certain day will most likely end up being counterproductive.
 It's not by planning a ton of tasks that you'll get to do them all.

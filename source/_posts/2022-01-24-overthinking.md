@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /2022/overthinking
+permalink: /othink
 ---
 Hello, it's been... much longer than what I expected.
 

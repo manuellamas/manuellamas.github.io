@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /2022/bad-work
+permalink: /dbw
 ---
 Often we get stuck staring at a blank sheet.
 Not because we can't think of anything, but because we can't think of anything "good" enough—good enough for us.

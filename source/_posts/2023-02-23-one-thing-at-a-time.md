@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /2023/1thing
+permalink: /1thing
 ---
 Whatever it is you have planned to do, nothing will make your plans move forward as effectively (and as further) as focus.
 Letting go of the noise in your mind, and immersing yourself in the task that you're engaged with right now, is then the ideal course of action.

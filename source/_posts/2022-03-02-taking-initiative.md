@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /2022/initiative
+permalink: /init
 ---
 It's easy to just accept the status quo and work with it.
 But what if you had a better way of doing things?

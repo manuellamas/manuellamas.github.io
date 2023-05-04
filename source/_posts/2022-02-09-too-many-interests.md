@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /2022/interests
+permalink: /tmi
 ---
 If you're like me, you're interested in *a lot* of things.
 And they grow by the day.
