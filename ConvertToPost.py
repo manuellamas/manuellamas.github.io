@@ -73,16 +73,15 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
 
         # To be added at the beginning of the file
         link_title = note_lines[2][6:-1].lower().replace(" ", "-")
-        # link_title = note_date[:-6] + "/" + link_title # Adding year on link as future-proof
 
         if not all: # If we're not changing all thoughts
             if note_date == datetime.datetime.now().strftime("%Y-%m-%d"): # If the date is the one of today, update "latest" link
-                update_latest(link_title, year)
+                update_latest(link_title)
                 print("The link to latest was updated to", link_title)
             else:
                 reply = input("Is the thought being updated the latest? y/n\n")
                 if reply.lower() == "y":
-                    update_latest(link_title, year)
+                    update_latest(link_title)
                     print("The link to latest was updated to", link_title)
                 else:
                     print("The link to latest wasn't updated.")
@@ -143,7 +142,7 @@ def check_same_title(title, link):
 
 
 
-def update_latest(link, year):
+def update_latest(link):
     """ Updates the latest.html source file to link to the newly created thought """
     latest_html_location = program_directory + "/source/latest.html" # Location of latest.html
 
@@ -153,8 +152,8 @@ def update_latest(link, year):
 
     # Editing the line with the link
     with open(latest_html_location, "w") as latest_html:
-        read_lines[3] = 'meta-redirect: <meta http-equiv = "refresh" content = "0; url = https://manuellamas.com/' + year + "/"+ link + '" />' + '\n'
-        read_lines[5] = 'For the latest thought please follow <a href="https://manuellamas.com/' + year + "/"+ link + '">this link</a>.'
+        read_lines[3] = 'meta-redirect: <meta http-equiv = "refresh" content = "0; url = https://manuellamas.com/' + link + '" />' + '\n'
+        read_lines[5] = 'For the latest thought please follow <a href="https://manuellamas.com/' + link + '">this link</a>.'
         # read_lines[5] = 'For the latest thought please follow <a href="https://manuellamas.com/2022/taking-initiative">this link</a>.'
         latest_html.writelines(read_lines)
 
