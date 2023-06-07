@@ -26,5 +26,5 @@ That way you can do (some) work.
 And the only way to become able to do something good, is if we keep trying.
 If we first do bad work.
 
-> "And now that you don't have to be perfect, you can be good."
+> "And now that you don't have to be perfect, you can be good."  
 — John Steinbeck, East of Eden

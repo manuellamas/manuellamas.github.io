@@ -28,5 +28,5 @@ So once you reach an obstacle—because you will—do not start fretting about t
 The process of overcoming the obstacle is what makes you grow.
 So, do not worry, and instead appreciate the chance to evolve!
 
-> "Journey before destination"
-— Way of Kings
+> "Journey before destination" 
+— The Way of Kings
