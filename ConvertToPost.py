@@ -15,7 +15,7 @@ Give the argument "all" and it runs on all posts present (useful for some kind o
 # Python File (Project) Location
 program_directory = os.path.dirname(__file__) # Where the Python script being ran is
 website_directory = os.path.split(program_directory)[0]
-m_directory = "C:\\Users\\ManuelLamas\\Documents\\M"
+m_directory = "E:\\M"
 
 # Obsidian original MD location
 vault_directory = m_directory + "\\Sihlbi_World\\Thoughts"
