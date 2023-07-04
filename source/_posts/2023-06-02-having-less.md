@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /less
+permalink: /hless
 ---
 I don't consider myself to be a minimalist.
 
