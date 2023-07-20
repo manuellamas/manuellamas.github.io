@@ -25,7 +25,7 @@ It's equally as beneficial for the easier ones, since after spending time on the
 
 Breaks are underestimated.
 Sometimes even seen as laziness.
-But just like the time you [plan to work](https://manuellamas.com/overplanning) doesn't equate to the time you *actually* work, the time you pour into a task or problem doesn't reflect on efficacy (or even efficiency).
+But just like the time you [plan to work](https://manuellamas.com/oplan) doesn't equate to the time you *actually* work, the time you pour into a task or problem doesn't reflect on efficacy (or even efficiency).
 It can even be counterproductive.
 
 You don't even need to feel yourself getting less productive to take a break.

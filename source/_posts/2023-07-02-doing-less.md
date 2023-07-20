@@ -2,7 +2,7 @@
 layout: post
 permalink: /dless
 ---
-I've mentioned how I enjoy [having less](https://manuellamas.com/less), but I've been realizing that I also enjoy *doing* less.
+I've mentioned how I enjoy [having less](https://manuellamas.com/hless), but I've been realizing that I also enjoy *doing* less.
 Doing fewer different things at any one specific moment, or at any one specific day.
 
 When I [aim to do less](https://manuellamas.com/oplan) I actually do more.
