@@ -26,6 +26,6 @@ If I'm not writing I'm much more likely to go in circles.
 Going over some particular thoughts over and over without really moving forward.
 By writing, I'm recording my thoughts, and doing it releases me from the need to hold tight to them just in case they slip through my mind and I forget about them.
 
-I often write down thoughts that arise from [reading](https://manuellamas.com/rd), and by doing so I dig a little deeper into the book—I take more value from it.
+I often write down thoughts that arise from [reading](/rd), and by doing so I dig a little deeper into the book—I take more value from it.
 
 So, take this as a friendly reminder to try and write as a way to think better and more (because there *is* a difference between casual and deliberate thinking).

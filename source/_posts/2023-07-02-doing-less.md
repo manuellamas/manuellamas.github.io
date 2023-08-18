@@ -2,10 +2,10 @@
 layout: post
 permalink: /dless
 ---
-I've mentioned how I enjoy [having less](https://manuellamas.com/hless), but I've been realizing that I also enjoy *doing* less.
+I've mentioned how I enjoy [having less](/hless), but I've been realizing that I also enjoy *doing* less.
 Doing fewer different things at any one specific moment, or at any one specific day.
 
-When I [aim to do less](https://manuellamas.com/oplan) I actually do more.
+When I [aim to do less](/oplan) I actually do more.
 
 Productivity is usually seen as maximizing the number of things that you do in a given time.
 [Kevin Kelly](https://tim.blog/2023/04/28/kevin-kelly-excellent-advice-for-living-transcript/) however, prefers to see productivity as maximizing the **amount of time you spend doing the things you most want to do**.
@@ -18,6 +18,6 @@ But it's no longer the number of things, rather it's the amount of time you spen
 
 You no longer rush to finish each thing so that you can do another.
 Now you take the time, the most you can, to do the one thing you're now doing.
-You [prioritize the process over the finish line](https://manuellamas.com/journey).
+You [prioritize the process over the finish line](/journey).
 
 Yet another scenario where less, for me, prevails.

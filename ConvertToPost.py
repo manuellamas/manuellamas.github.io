@@ -152,9 +152,8 @@ def update_latest(link):
 
     # Editing the line with the link
     with open(latest_html_location, "w") as latest_html:
-        read_lines[3] = 'meta-redirect: <meta http-equiv = "refresh" content = "0; url = https://manuellamas.com/' + link + '" />' + '\n'
-        read_lines[5] = 'For the latest thought please follow <a href="https://manuellamas.com/' + link + '">this link</a>.'
-        # read_lines[5] = 'For the latest thought please follow <a href="https://manuellamas.com/2022/taking-initiative">this link</a>.'
+        read_lines[3] = 'meta-redirect: <meta http-equiv = "refresh" content = "0; url = /' + link + '" />' + '\n'
+        read_lines[5] = 'For the latest thought please follow <a href="/' + link + '">this link</a>.'
         latest_html.writelines(read_lines)
 
 

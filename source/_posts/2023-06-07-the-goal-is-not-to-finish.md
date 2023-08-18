@@ -23,7 +23,7 @@ The process itself is what we enjoy experiencing, and not the act of finishing i
 
 On the learning scenario, it's the process that teaches us.
 It's by facing the roadblocks along the way that we learn.
-So once you reach an obstacle—[because you will](https://manuellamas.com/lobs)—do not start fretting about the extra time you're spending to *finish* it.
+So once you reach an obstacle—[because you will](/lobs)—do not start fretting about the extra time you're spending to *finish* it.
 
 The process of overcoming the obstacle is what makes you grow.
 So, do not worry, and instead appreciate the chance to evolve!
