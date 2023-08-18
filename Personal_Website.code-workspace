@@ -7,7 +7,7 @@
 	"settings": {
 		"files.exclude": {
 			"**/styles.scss": true, // Excluding this file because scss (and css) linting doesn't work with yaml frontmatter
-			"docs": true // Hiding the output of the Jekyll
+			// "docs": true // Hiding the output of the Jekyll
 		}
 	}
 }
