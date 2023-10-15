@@ -10,8 +10,15 @@
 #photo {
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 2em;
     width: 15em;
     height: auto;
     border-radius: 5px; //  Rounding corners
+}
+
+@media (max-width: 50em){
+    #photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
