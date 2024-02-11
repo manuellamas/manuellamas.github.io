@@ -11,7 +11,7 @@ Specially if it's not just once or twice.
 If it happens regularly, silently compounding.
 
 As it's something we find pleasant, even if just slightly, we see no harm in it.
-We don't even consider we doing it as being negative in some way.
+We don't even consider doing it as being negative in some way.
 
 And since we find some measure of pleasure in it, cutting it off isn't easy.
 Because we like doing it.
