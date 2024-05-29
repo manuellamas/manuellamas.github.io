@@ -153,3 +153,34 @@ a:hover {
     }
 }
 
+
+// Main page IPA below name/title
+.homepage-title-section {
+    width: 8em;
+    // padding-left: 0;
+    margin: 0 auto;
+}
+
+.homepage-title-section p {
+    width: 8em;
+    // margin: 0.2em auto;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    // margin: 0.2em auto 0.2em 0em;
+}
+
+// Just the IPA version of the name
+.name-IPA {
+    padding-left: 0;
+    margin-left: 1.0em; // Not ideal - Distanceto be vertically aligned at the start with the start of the name
+    text-align: left;
+    color: var(--text-faded);
+    font-size: 0.59em;
+}
+
+
+// The idea is to leave the title where it is. PLacing it inside a div that is much shorter in horizontal width.
+// In that div making the tite center, and the IPA reading being shorter than the title, align left with the div.
+// Basically starting at the same place as the title, and not being centered horizontaly on that page.
+
+// Also, make it smaller possibly in respect to h1 size, try 2/5ths of it to start with

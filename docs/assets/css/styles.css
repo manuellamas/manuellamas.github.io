@@ -46,6 +46,12 @@ a:hover { text-decoration: underline; }
 @keyframes s-light-up { 0% { fill: #FFFFFF; }
   100% { fill: #4D84C4; } }
 
+.homepage-title-section { width: 8em; margin: 0 auto; }
+
+.homepage-title-section p { width: 8em; margin-top: 0.2em; margin-bottom: 0.2em; }
+
+.name-IPA { padding-left: 0; margin-left: 1.0em; text-align: left; color: var(--text-faded); font-size: 0.59em; }
+
 /* This must be below the main.css due to the general link formatting */
 /* Navigation Bar */
 .navbar { /* background-color: #202020; */ overflow: hidden; }
