@@ -3,3 +3,5 @@ destination: ./docs
 url: https://manuellamas.com
 kramdown:
   hard_wrap: false # "true" enables single line breaks
+sass:
+  sass_dir: "_sass"
