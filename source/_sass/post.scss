@@ -1,25 +1,28 @@
 blockquote p{
     font-style: italic;
-    // quotes: '"' '"';
+    /* quotes: '"' '"'; */
 }
-// blockquote p::before {
-//     content: open-quote;
-// }
-// blockquote p::after {
-//     content: close-quote;
-// }
+
+/*
+blockquote p::before {
+    content: open-quote;
+}
+blockquote p::after {
+    content: close-quote;
+}
+*/
 
 .post-title {
     line-height: 130%;
 }
 
 .post-date {
-    // color: #4D84C4;
+    /* color: #4D84C4; */
     color: var(--text-faded);
     font-size: 15px;
 }
 
-// Thoughts Page
+/* Thoughts Page */
 .thoughts-post-title {
     margin-bottom: 0;
 }

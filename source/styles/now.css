@@ -1,0 +1,13 @@
+.last-updated{
+    padding-top: 120px;
+    text-align: right;
+    color: var(--text-faded);
+}
+
+.last-updated p{
+    margin: 0 auto; /* Top/Bot are 0, Right/Left are auto  */    
+}
+
+.last-updated a{
+    color: rgba(77, 132, 196, 0.73);
+}
