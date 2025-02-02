@@ -12,20 +12,28 @@ Give the argument "all" and it runs on all posts present (useful for some kind o
 """
 
 
+FIELD_TITLE = "title"
+FIELD_DATE = "date"
+FIELD_LINK = "link"
+
+
 # Python File (Project) Location
 program_directory = os.path.dirname(__file__) # Where the Python script being ran is
 website_directory = os.path.split(program_directory)[0]
 m_directory = "D:\\M"
 
-# Obsidian original MD location
-vault_directory = m_directory + "\\Sihlbi_World\\Thoughts"
+## Obsidian original MD location
+# SSD Location where I'll move Obsidian to, in an attempt to achieve faster loading times, as the first loading of Obsidian (per boot) is quite slow ~20s.
+vault_thoughts_directory = "C:\\Users\\ManuelLamas\\Documents\\M\\Sihlbi_World\\Thoughts"
+# Previous location in second disk (HDD)
+# vault_thoughts_directory = m_directory + "\\Sihlbi_World\\Thoughts"
 
 # Website posts location
 posts_directory = program_directory + "\\source\\_posts"
 
 # Obtain a list of the file names of all .md files in the thoughts directory (in Obsidian).
 # Only those in the "root" and not in a subdirectory. So be careful if you plan to place them on subfolders
-list_files = [f for f in listdir(vault_directory) if (os.path.isfile(os.path.join(vault_directory, f)) and f[-2:]) == "md"]
+list_files = [f for f in listdir(vault_thoughts_directory) if (os.path.isfile(os.path.join(vault_thoughts_directory, f)) and f[-2:]) == "md"]
 
 
 
@@ -34,14 +42,18 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
     from the Obsidian Note with the corresponding date (or if ommited the date of today)  """
     date = "" # Initializing the variable
     note_title = ""
+    lines = ""
+
 
     for i in range(len(list_files)):
 
-        file = open(vault_directory + "\\" + list_files[i], "r")
+        file = open(vault_thoughts_directory + "\\" + list_files[i], "r")
         
         lines = file.readlines() # List with all the lines of the file
+
+
+
         date_line = lines[1] # Second line of the file
-        link_title = lines[2][6:-1].lower().replace(" ", "-")
         file.close()
 
         date = date_line.replace("date: ", "").replace("\n", "")
@@ -52,6 +64,14 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
             # Get file_name
             note_title = list_files[i]
             break
+
+
+    frontMatter, noteContent = splitFrontAndContent(lines)
+
+    link_title = findFrontMatterField(FIELD_LINK, frontMatter).lower().replace(" ", "-")
+    date = findFrontMatterField(FIELD_DATE, frontMatter)
+    # date = date_line.replace("date: ", "").replace("\n", "")
+
 
 
     if note_title != "":
@@ -67,12 +87,11 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
 
         print(note_title)
         print(post_title)
-        note_file = open(vault_directory + "\\" + note_title, "r")
+        note_file = open(vault_thoughts_directory + "\\" + note_title, "r")
         note_lines = note_file.readlines()
-        note_content = note_lines[5:] # Ignores the first five lines (original yaml frontmatter)
+        # note_content = note_lines[5:] # Ignores the first five lines (original yaml frontmatter)
 
         # To be added at the beginning of the file
-        link_title = note_lines[2][6:-1].lower().replace(" ", "-")
 
         if not all: # If we're not changing all thoughts
             if note_date == datetime.datetime.now().strftime("%Y-%m-%d"): # If the date is the one of today, update "latest" link
@@ -88,12 +107,17 @@ def obsidianToPost(note_date = datetime.datetime.now().strftime("%Y-%m-%d"), all
 
 
         link = "permalink: /" + link_title
+        thought_title = findFrontMatterField(FIELD_TITLE, frontMatter)
         # link = "permalink: /" + year +  "/" + link_title
-        yaml_header = "---\nlayout: post\n" + link + "\n---\n"
+        yaml_header = "---\nlayout: post\n" + link
+        if thought_title is not None:
+            yaml_header += "\ntitle: " + thought_title
+
+        yaml_header += "\n---\n"
         post_file.write(yaml_header)
         print(link_title)
 
-        for line in note_content:
+        for line in noteContent:
             post_file.write(line)
 
         # Close files
@@ -117,7 +141,7 @@ def check_same_title(title, link):
     for file in list_files_exclude:
         same_title_link = False # If there's a file with same title or link
 
-        with open(vault_directory + "\\" + file, "r") as file_note:
+        with open(vault_thoughts_directory + "\\" + file, "r") as file_note:
             lines = file_note.readlines()
             date = lines[1][6:-1] # Getting the date
             # date_year = date[:4] # Getting the year
@@ -158,6 +182,31 @@ def update_latest(link):
 
 
 
+def splitFrontAndContent(lines):
+    # Define which lines are of the yaml front matter
+    finalSeparatorFound = False
+    finalSeparatorLine = 1 # Ignoring the first (0) as it'll have to be the first "---"
+    while (not finalSeparatorFound):
+        if finalSeparatorLine == len(lines):
+            print("The front matter of this note does not have a final separator line '---'")
+            break
+        if lines[finalSeparatorLine].strip() == "---":
+            finalSeparatorFound = True
+        finalSeparatorLine += 1
+
+    frontMatter = lines[1:finalSeparatorLine-1]
+    noteContent = lines[finalSeparatorLine:]
+    return frontMatter, noteContent
+
+
+
+def findFrontMatterField(fieldName, frontMatter):
+    for line in frontMatter:
+        key, value = line.split(": ", 1)
+        if fieldName == key:
+            return value.replace("\n","")
+    return
+
 
 
 if __name__ == "__main__":
@@ -169,20 +218,20 @@ if __name__ == "__main__":
         if sys.argv[-1].lower() == "all": # Run on all posts
             
             # Obsidian original MD location
-            vault_directory = m_directory + "\\Sihlbi_World\\Thoughts"
+            vault_thoughts_directory = m_directory + "\\Sihlbi_World\\Thoughts"
 
             # Website posts location
             posts_directory = program_directory + "\\source\\_posts"
 
             # Obtain a list of the file names of all .md files in the thoughts directory (in Obsidian).
             # Only those in the "root" and not in a subdirectory. So be careful if you plan to place them on subfolders
-            print(vault_directory)
-            list_files = [f for f in listdir(vault_directory) if (os.path.isfile(os.path.join(vault_directory, f)) and f[-2:]) == "md"]
+            print(vault_thoughts_directory)
+            list_files = [f for f in listdir(vault_thoughts_directory) if (os.path.isfile(os.path.join(vault_thoughts_directory, f)) and f[-2:]) == "md"]
 
             # Get Dates (just because that's the input that obsidianToPost allows)
             list_file_dates = []
             for i in range(len(list_files)):
-                file = open(vault_directory + "\\" + list_files[i], "r")
+                file = open(vault_thoughts_directory + "\\" + list_files[i], "r")
 
                 lines = file.readlines() # List with all the lines of the file
                 date_line = lines[1] # Second line of the file
