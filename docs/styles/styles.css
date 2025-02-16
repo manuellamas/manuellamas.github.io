@@ -8,7 +8,7 @@ body { max-width: 60em; /* width: 60em; */ margin: 0 auto; /* Top/Bot are 0, Rig
 .main { /* Increase to other values 80em if I want to have more than just text*/ /* max-width: 50em; */ /* Top/Bot are 0, Right/Left are auto  */ margin: 0 auto 100px auto; width: 85%; /* width: var(--main-width); */ /* padding: 5px; */ /* Attempting to use the same metrics (% in this case) for both margin and padding on this element */ padding: 0.5%; background-color: #000000; color: #c0d6e4; font-family: "Noto Sans", Georgia; font-size: 18px; line-height: 30px; /* Spacing between each line */ /* align-items: stretch; */ }
 
 /* Bold */
-strong { color: #BCE844; }
+strong, b { color: #BCE844; }
 
 /* Create a specific bold */
 .main-title { margin-top: 1em; margin-bottom: 2em; text-align: center; }

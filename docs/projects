@@ -17,7 +17,7 @@
 
         <!-- Font -->
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
-        <title>Why I Write | Manuel Lamas</title>
+        <title>Projects | Manuel Lamas</title>
     </head>
 
     <body>
@@ -45,45 +45,61 @@
         </div>
     </div>
 </nav>
-            <h1 class="post-title">Why I Write</h1>
-<p class = "post-date">2023-02-16</p> <!-- Date published -->
-<p>A little over two years ago I begun the daily habit of writing for myself.</p>
+            <div>
+    <h1 class="main-title">Projects</h1>
+    <!-- I'm currently working on this <a href="https://github.com/manuellamas/manuellamas.github.io" target="_blank">website</a>. I've never been involved with web development before, so it's a chance to learn a bit on how it works while building my very first personal website. -->
+</div>
 
-<p>I started simply because I was curious to see what would happen.
-Now however, it’s my go-to tool for whenever I want to think by myself.</p>
+<h3>Things I've done</h3>
 
-<p>To think more carefully on a problem, to digest a particular event that happened that day, or to reflect on a particular aspect of my life—for example whether I should change something, and if so how.</p>
+<div>
+    <p>
+        I called this page Projects but actually this is more a list of <em>mini</em> projects that I've made.
+    </p>
+    <p>
+        <!-- This website is one of the things I made. -->
+        This website is itself one of those :)
+        Made with <a href="https://github.com/manuellamas/manuellamas.github.io">simple HTML and CSS</a>.
+    </p>
+</div>
 
-<p><strong>I write to clear my head.</strong></p>
+<!-- <a href="#animated_plot_portugal_covid19">Animated plot - Portugal COVID-19 Daily New Cases</a> -->
+<div class="project-div">
+    <h4 id="animated_plot_portugal_covid19">Animated plot - Portugal COVID-19 Daily New Cases</h4>
+    <p>I've been amazed by awesome data visualizations before, and so I thought I should try it out to see what I could do. This was my first time creating one.</p>
+    <p>Here's an animated plot of Portugal's COVID-19 daily new cases. If you run the script from <a href="https://github.com/manuellamas/Portugal-COVID19-Plot">this repository</a>, it'll fetch the most recent data from <a href="https://ourworldindata.org/">Our World in Data</a> and create the animation.</p>
+    <p>Below is the result (with data of 12/03/2022)</p>
+    <!-- <video controls autoplay muted>  -->
+    <video controls muted class="project-media">
+        <source src="/videos/Portugal_daily_new_cases.mp4" type="video/mp4">
+    </video>
+</div>
 
-<p>I quickly overwhelm myself thinking about too many things at once—most of them of little or no importance.
-So I jot down my thoughts, analyzing them one by one.
-Putting each in clear terms so that I can move on.</p>
-
-<p>I do it to empty my mind, that way I can completely center my focus on the task at hand.</p>
-
-<p><strong>I write to reflect.</strong></p>
-
-<p>It’s also my way of not just recording my thoughts, but of thinking.
-That is, I think <em>through</em> the act of writing.</p>
-
-<p>If I’m not writing I’m much more likely to go in circles.
-Going over some particular thoughts over and over without really moving forward.
-By writing, I’m recording my thoughts, and doing it releases me from the need to hold tight to them just in case they slip through my mind and I forget about them.</p>
-
-<p>I often write down thoughts that arise from <a href="/rd">reading</a>, and by doing so I dig a little deeper into the book—I take more value from it.</p>
-
-<p>So, take this as a friendly reminder to try and write as a way to think better and more (because there <em>is</em> a difference between casual and deliberate thinking).</p>
-
-
-
+<div class="project-div">
+    <h4>Model visualization - Forest-fire Model</h4>
+    <p>
+        While reading <a href="https://www.goodreads.com/book/show/39088592-the-model-thinker">The Model Thinker</a> I encountared a few models that I wanted to try animating.
+        So here's one.
+    </p>
+    <p>
+        In the <a href="https://en.wikipedia.org/wiki/Forest-fire_model">Forest-fire Model</a> at each period a cell is chosen.
+        If it's empty there's a probability <i>p</i> that the space will be filled with a tree, and if there's already a tree there there's a probability <i>1-p</i> it'll burn.
+        If it burns then in the next period all trees in neighbour cells also burn.
+    </p>
+    <p>
+        The example below is for 3000 periods and <i>p = 0.95</i>.
+        Here's the <a href="https://github.com/manuellamas/Forest-Fire-Model">code</a> in case you want to try different sizes of the "field" and different probabilities.</p>
+    <video controls muted class="project-media">
+        <source src="/videos/Forest_fire_model.mp4" type="video/mp4">
+    </video>
+</div>
         </div>
         <footer>
     <p class="footer-name link-light-up">
         <a href="/">Manuel Lamas</a>
     </p>
     <p class="footer-mail link-light-up">
-        <a href="mailto:manuelbravolamas@gmail.com">manuelbravolamas@gmail.com</a>
+        <a href="mailto:m@manuellamas.com">m@manuellamas.com</a>
     </p>
     <social>
         <p class="footer-links-section">

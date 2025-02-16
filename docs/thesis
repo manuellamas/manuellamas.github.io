@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"> <!-- Character encoding, UT-8 recommended for HTML5 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To make it adapt the size depending on the device -->
-        
+        <meta http-equiv = "refresh" content = "0; url = files/ManuelLamas_MasterThesis.pdf" />
 
         <link rel="icon" href="/images/M_icon.svg">
 
@@ -17,7 +17,7 @@
 
         <!-- Font -->
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
-        <title>Reading | Manuel Lamas</title>
+        <title>Master Thesis | Manuel Lamas</title>
     </head>
 
     <body>
@@ -45,65 +45,14 @@
         </div>
     </div>
 </nav>
-            <h1 class="post-title">Reading</h1>
-<p class = "post-date">2023-02-08</p> <!-- Date published -->
-<p>Until a few years ago (sometime near the end of 2020) the only books I had read were the ones I had been forced to read while in school, and I hated reading every single one of them.
-At first it was simply because I was being forced to, but eventually it grew to become an irrational dislike of every book supported only by the memories of school.</p>
-
-<p>After high school I started to become interested in certain books, and at this time the hurdle was less the memories and more the struggle of creating a reading habit.</p>
-
-<p>Choosing to start a book felt like a commitment—a <em>very</em> long one.
-I would start a book, read about 20 pages in one or two days, then stop.
-A week would pass, then another, and by then I didn’t remember what I’d read and was not interested in picking it up again.
-This happened a couple of times, sometimes with the same book.</p>
-
-<p>By 2020 I was watching a lot of youtube videos on productivity—while not being productive at all, but let’s stay on track and leave that story for later—and many of them were about habits, particularly about <em>how</em> to build them.</p>
-
-<p>Then one day later that year, while chatting with a friend, he mentioned how he had read <a href="https://www.goodreads.com/book/show/113436.Eragon">Eragon</a>, a book I knew and was interested in.
-However, like many others, I just hadn’t even tried to read it given my experience at failing to read books.</p>
-
-<p>I told him I would like to start reading but I just couldn’t read more than a few pages of any book, to which he replied something along the lines of: “Ah. Well, you’ll start with this one. I’ll take it over to your house today!”
-And… he did.</p>
-
-<p>Since he had gone to the trouble of brining it to my house, I thought I should at least give it a try, but this time, with a twist.
-With all those habit forming ideas that I had got from the productivity videos, I decided to read 10 pages per day.</p>
-
-<p>The book had about 500 pages, which ironically was far longer than any of the ones I had tried reading before. 
-Seeing it as 10 pages every day however, made the task seem much easier.
-So that very day, before going to sleep, I sat on my bed, turned on the lamp and read 10 pages.
-Then the following day I did the same, then the day after that, and so a habit began.</p>
-
-<p>It didn’t took long for the habit’s reason of existence to shift from “because I have to” to “because I’m looking forward to reading it”.
-On some days I read far more than 10 pages, specially near the end.
-But I always read <em>at least</em> 10.</p>
-
-<p>Then, eventually, I finished it.
-The first book I had ever set out to read out of my own volition, and it had taken me only a few days longer than a month (which resulted on an average of a little over 14 pages per day).</p>
-
-<p>That day I messaged my friend: “Hey, you know that book you borrowed me some time ago? I just finished it. Would you mind borrowing me the sequel?”</p>
-
-<p>Now I love reading.
-I dropped the 10 page rule for fiction.
-Reading roughly for half an hour before bed on a regular day, but with no strict rule, sometimes more, sometimes less.
-Though I stuck with the rule for non-fiction, which I read sometime during the day.</p>
-
-<p>Why am I telling you this?
-Actually, I’m not entirely sure.
-Perhaps someone, somewhere, will be in the situation I once was, and by reading this will on a whim pick up a book and read while following a very simple 10-page rule.</p>
-
-<p>But then again perhaps not.</p>
-
-<p>Still, who knows?</p>
-
-
-
+            For my master thesis please follow <a href="files/ManuelLamas_MasterThesis.pdf">this link</a>.
         </div>
         <footer>
     <p class="footer-name link-light-up">
         <a href="/">Manuel Lamas</a>
     </p>
     <p class="footer-mail link-light-up">
-        <a href="mailto:manuelbravolamas@gmail.com">manuelbravolamas@gmail.com</a>
+        <a href="mailto:m@manuellamas.com">m@manuellamas.com</a>
     </p>
     <social>
         <p class="footer-links-section">

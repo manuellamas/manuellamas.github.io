@@ -17,7 +17,7 @@
 
         <!-- Font -->
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
-        <title>About me | Manuel Lamas</title>
+        <title>The Goal Is Not To Finish | Manuel Lamas</title>
     </head>
 
     <body>
@@ -45,42 +45,50 @@
         </div>
     </div>
 </nav>
-            <div>
-    <h1 class="main-title">About Me</h1>
-    <div class="about-me">
-        <!-- My photo -->
-        <img src="images/ManuelLamas_photo.jpg" alt="Manuel Lamas Photo" id="photo">
+            <h1 class="post-title">The Goal Is Not To Finish</h1>
+<p class = "post-date">2023-06-07</p> <!-- Date published -->
+<p>I often find myself rushing to finish something that I’m doing, for no particular reason.</p>
 
-        <div class="about-me-text">
-            <!-- Greetings and my name -->
-            <p>Hey there, I'm Manuel!</p>
+<p>Actually if I stop to reflect a bit, I do <em>know</em> the reason.
+I do it just to finish it.
+Just to reach the end.</p>
 
-            <!-- What I studied -->
-            <p>I studied Mathematics as my First degree, and Computer Science as my Master's degree, both at <a href="https://sigarra.up.pt/fcup/en/web_page.inicial">FCUP</a>.</p>
+<p>As if finishing it would reward me in anyway.</p>
 
-            <!-- What I do -->
-            <p>Currently a Tech Consultant at <a href=https://www.linkedin.com/company/kpmg-portugal/>KPMG</a>.
-            
-            <!-- What I am -->
-            <p>I'm fascinated by a lot of things—<a href="/tmi">too many things</a>.</p>
-            <p>I enjoy automating things.</p>
-            <p>I <em>really</em> enjoy <a href="/aq">asking questions</a>.</p>
+<p>Here are some examples I can think of in which I catch myself doing it:</p>
+<ul>
+  <li>Reading a book</li>
+  <li>Writing a weekly reflection</li>
+  <li>Going through a knowledge exercise of any kind (while learning a language, programming, mathematics, history, …)</li>
+</ul>
 
-            <!-- My goals -->
-            <p>And I'm constantly trying to understand how to live a better life.</p>
+<p>However that’s not right.</p>
 
-            <!-- Website's raison d'etre -->
-            <p>This website is my little corner in the internet where I share some of the things that I <a href="/projects">make</a> and <a href="/thoughts">think</a>.</p>
-        </div>
-    </div>
-</div>
+<p>The goal is not to finish it.
+But to go through the process.
+The process itself is what we enjoy experiencing, and not the act of finishing it.</p>
+
+<p>On the learning scenario, it’s the process that teaches us.
+It’s by facing the roadblocks along the way that we learn.
+So once you reach an obstacle—<a href="/lobs">because you will</a>—do not start fretting about the extra time you’re spending to <em>finish</em> it.</p>
+
+<p>The process of overcoming the obstacle is what makes you grow.
+So, do not worry, and instead appreciate the chance to evolve!</p>
+
+<blockquote>
+  <p>“Journey before destination” 
+— The Way of Kings</p>
+</blockquote>
+
+
+
         </div>
         <footer>
     <p class="footer-name link-light-up">
         <a href="/">Manuel Lamas</a>
     </p>
     <p class="footer-mail link-light-up">
-        <a href="mailto:manuelbravolamas@gmail.com">manuelbravolamas@gmail.com</a>
+        <a href="mailto:m@manuellamas.com">m@manuellamas.com</a>
     </p>
     <social>
         <p class="footer-links-section">

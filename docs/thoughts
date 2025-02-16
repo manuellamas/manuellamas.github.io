@@ -17,7 +17,7 @@
 
         <!-- Font -->
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
-        <title>Manuel Lamas</title>
+        <title>Thoughts | Manuel Lamas</title>
     </head>
 
     <body>
@@ -46,29 +46,124 @@
     </div>
 </nav>
             <div>
-    <!-- <h1 class="main-title">Manuel Lamas</h1> -->
-    <h1 class="main-title">
-        <div class="homepage-title-section">
-            <p>Manuel Lamas</p>
-            <p class="name-IPA">/mɐˈnwɛl/</p>
-        </div>
-    </h1>
-    <p>
-        Hi, welcome to my page!
-        Thanks for stopping by.
-    </p>
-    <p>
-        If you want to know more about me you can check my <a href="/about">"about" page</a> or see what I'm doing <a href="/now">now</a>.
-    </p>
-    <p>
-        Occasionally I write a small post with <a href="/thoughts">my thoughts</a>.
-        It's still a very green (and sporadic) experiment but feel free to check it if you're curious.
-    </p>
-    <p>
-        <!-- Why are you here? -->
-        If you resonate with something said here, completely disagree with it, or even if you are simply curious, I'd love to hear what you have to say.
-        Doesn't need to be anything fancy, just <a href="mailto:m@manuellamas.com?subject=Hi!">say "Hi!"</a>.
-    </p>
+    <h1 class="main-title">Thoughts</h1>
+    <div class="thoughts-intro">
+        <p>Here I share my thoughts about whatever is on my mind.</p>
+    </div>
+
+    <ul>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/canyouact">Can you act on it?</a></h3>
+                <p class="thoughts-post-date">16 Feb 2025</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/lnl">Love Not Like</a></h3>
+                <p class="thoughts-post-date">11 Feb 2024</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/boxes">Beware Of Boxes</a></h3>
+                <p class="thoughts-post-date">13 Jan 2024</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/aq">Asking Questions</a></h3>
+                <p class="thoughts-post-date">26 Nov 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/lobs">Learning Is The Process Of Overcoming Obstacles</a></h3>
+                <p class="thoughts-post-date">20 Jul 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/dless">Doing Less</a></h3>
+                <p class="thoughts-post-date">02 Jul 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/journey">The Goal Is Not To Finish</a></h3>
+                <p class="thoughts-post-date">07 Jun 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/hless">Having Less</a></h3>
+                <p class="thoughts-post-date">02 Jun 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/walk">Go For A Walk</a></h3>
+                <p class="thoughts-post-date">17 May 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/1thing">One Thing At A Time</a></h3>
+                <p class="thoughts-post-date">23 Feb 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/whywrite">Why I Write</a></h3>
+                <p class="thoughts-post-date">16 Feb 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/rd">Reading</a></h3>
+                <p class="thoughts-post-date">08 Feb 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/time">Time</a></h3>
+                <p class="thoughts-post-date">12 Jan 2023</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/dbw">Do Bad Work</a></h3>
+                <p class="thoughts-post-date">15 Oct 2022</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/init">Taking Initiative</a></h3>
+                <p class="thoughts-post-date">02 Mar 2022</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/breaks">Taking Breaks</a></h3>
+                <p class="thoughts-post-date">16 Feb 2022</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/tmi">Too Many Interests</a></h3>
+                <p class="thoughts-post-date">09 Feb 2022</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/vprog">Seeing Past The Visible Progress</a></h3>
+                <p class="thoughts-post-date">03 Feb 2022</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/oplan">Overplanning</a></h3>
+                <p class="thoughts-post-date">01 Feb 2022</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/fmist">How We Face Mistakes</a></h3>
+                <p class="thoughts-post-date">27 Jan 2022</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/othink">Overthinking</a></h3>
+                <p class="thoughts-post-date">24 Jan 2022</p>
+            </li>
+        
+            <li>
+                <h3 class="thoughts-post-title"><a href="/tstart">The Start</a></h3>
+                <p class="thoughts-post-date">26 Dec 2021</p>
+            </li>
+        
+    </ul>
 </div>
         </div>
         <footer>

@@ -17,7 +17,7 @@
 
         <!-- Font -->
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
-        <title>404 Error | Manuel Lamas</title>
+        <title>Go For A Walk | Manuel Lamas</title>
     </head>
 
     <body>
@@ -45,9 +45,42 @@
         </div>
     </div>
 </nav>
-            <h1 id="404-error-page-not-found">404 Error Page not Found</h1>
+            <h1 class="post-title">Go For A Walk</h1>
+<p class = "post-date">2023-05-17</p> <!-- Date published -->
+<p>We often get so caught up in our routines that we get trapped by it.</p>
 
-<p>The page you are looking for doesn’t exist.</p>
+<p>Whenever I feel that that’s the case I try to go for a walk.
+No destination, no pace to follow.</p>
+
+<p>An hour would be plenty. 30 minutes if you’re really, <em>really</em> tight on time—which you probably aren’t, and if you are and it truly is impossible for you to find a single free hour amidst an entire week, are you really in control of your own time?</p>
+
+<p>Just having the time—and attention—will allow you to notice things that you ordinarily wouldn’t.
+Seeing people go about their lives, looking at the sky, the trees, whatever it is you want to focus on.</p>
+
+<p>After a while, when you’re really out of your autopilot mode, your mind may start to empty, and after that you’ll start to think.</p>
+
+<p>Is what you’re doing with your time what you want to do?
+Or is it what you “should”?
+Or perhaps what you’ve resigned to do?</p>
+
+<p>If it is what you want, then that’s great!</p>
+
+<p>But if it isn’t, then now—when you’re momentarily away from the everyday schedule—is the time to change.
+Because if you don’t, you’ll just plunge deep into your routine once more.
+Seeing and doing nothing but what you always see and do.</p>
+
+<p>How do you want to spend your days?</p>
+
+<p>Entertain the thought: if you weren’t doing it, then what would you want to do instead?
+Why then—if that’s what you truly want—aren’t you doing <em>that</em>?</p>
+
+<p>So, please, go for a walk every now and then.
+Escape your routine even if only for a moment, and give yourself time to think.</p>
+
+<p>Don’t let time get past you.
+Don’t let <em>life</em> get past you.</p>
+
+
 
         </div>
         <footer>
@@ -55,7 +88,7 @@
         <a href="/">Manuel Lamas</a>
     </p>
     <p class="footer-mail link-light-up">
-        <a href="mailto:manuelbravolamas@gmail.com">manuelbravolamas@gmail.com</a>
+        <a href="mailto:m@manuellamas.com">m@manuellamas.com</a>
     </p>
     <social>
         <p class="footer-links-section">

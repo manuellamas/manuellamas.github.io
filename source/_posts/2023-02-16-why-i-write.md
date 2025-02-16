@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /write
+permalink: /whywrite
 ---
 A little over two years ago I begun the daily habit of writing for myself.
 

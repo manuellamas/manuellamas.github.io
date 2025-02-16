@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"> <!-- Character encoding, UT-8 recommended for HTML5 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To make it adapt the size depending on the device -->
-        <meta http-equiv = "refresh" content = "0; url = files/ManuelLamas_CV.pdf" />
+        
 
         <link rel="icon" href="/images/M_icon.svg">
 
@@ -17,7 +17,7 @@
 
         <!-- Font -->
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
-        <title>CV | Manuel Lamas</title>
+        <title>One Thing At A Time | Manuel Lamas</title>
     </head>
 
     <body>
@@ -45,14 +45,39 @@
         </div>
     </div>
 </nav>
-            For my CV please follow <a href="files/ManuelLamas_CV.pdf">this link</a>.
+            <h1 class="post-title">One Thing At A Time</h1>
+<p class = "post-date">2023-02-23</p> <!-- Date published -->
+<p>Whatever it is you have planned to do, nothing will make your plans move forward as effectively (and as further) as focus.
+Letting go of the noise in your mind, and immersing yourself in the task that you’re engaged with right now, is then the ideal course of action.</p>
+
+<p>Something that I often do to handle the noise is to <a href="/write">write all loose thoughts</a> I’m having.
+Going over each one until I’ve clarified to myself that they either don’t deserve my attention, or have already been “taken care” of—by having previously input them in my system.</p>
+
+<p>I trust my reminders and calendar (the system) to work for me in “remembering” the really important things.
+I use them, precisely, so that <em>I</em> don’t have to.</p>
+
+<p>Focusing is about more than just getting things done.
+For me, it’s also about enjoying the moment—doing whatever it is—without having anything weighing on my mind.</p>
+
+<p>So, acknowledge that whatever it is that you’re busying yourself thinking about, isn’t important.
+Or that if it is, the thought will inevitably pop up again later.</p>
+
+<p>When you actually manage to clear the noise, it really is a great feeling.
+To simply do one thing and not worry about anything else.</p>
+
+<p>Then onto the next one.</p>
+
+<p>One thing at a time.</p>
+
+
+
         </div>
         <footer>
     <p class="footer-name link-light-up">
         <a href="/">Manuel Lamas</a>
     </p>
     <p class="footer-mail link-light-up">
-        <a href="mailto:manuelbravolamas@gmail.com">manuelbravolamas@gmail.com</a>
+        <a href="mailto:m@manuellamas.com">m@manuellamas.com</a>
     </p>
     <social>
         <p class="footer-links-section">

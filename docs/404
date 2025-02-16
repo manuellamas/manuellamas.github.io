@@ -13,15 +13,11 @@
         <!-- <link rel="stylesheet" href="/styles.css"> -->
         <link rel="stylesheet" href="/styles/styles.css">
         
-            
-        <link rel="stylesheet" href="/styles/now.css">
-            
-        
 
 
         <!-- Font -->
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
-        <title>Now | Manuel Lamas</title>
+        <title>404 Error | Manuel Lamas</title>
     </head>
 
     <body>
@@ -49,41 +45,17 @@
         </div>
     </div>
 </nav>
-            <div>
-    <h1 class="main-title">What I'm doing now</h1>
-    <p>
-        I'm in Porto, Portugal.
-    </p>
-    <ul>
-        <li>
-            Working as a Tech Consultant at <a href=https://www.linkedin.com/company/kpmg-portugal/>KPMG</a>.
-        </li>
-        <li>
-            Reading.
-            <!-- For the curious ones who are here, I'm getting back to reading non-fiction books. Right now with SPQR :) -->
-            Here's the updated list of the books I'm <a href="https://goodreads.com/manuellamas" target="_blank">reading now</a>.
-        </li>
-        <!-- <li>
-            Writing about ideas that I get from reading (or not) to reflect deeper about them.
-            Sometimes sharing them <a href="/thoughts">in public</a>.
-        </li> -->
-        <li>
-            Learning Japanese at <a href="https://sigarra.up.pt/flup/en/WEB_PAGE.INICIAL">FLUP</a>.
-            It has been super fun to deliberately and consistently (through classes) learn something new.
-        </li>
-    </ul>
-</div>
-<div class="last-updated">
-    <p>(Inspired by <a href="https://nownownow.com/about" target="_blank">Derek Sivers and the nownownow</a>)</p>
-    <p><em>Last update was 01/08/2024.</em></p>
-</div>
+            <h1 id="404-error-page-not-found">404 Error Page not Found</h1>
+
+<p>The page you are looking for doesn’t exist.</p>
+
         </div>
         <footer>
     <p class="footer-name link-light-up">
         <a href="/">Manuel Lamas</a>
     </p>
     <p class="footer-mail link-light-up">
-        <a href="mailto:manuelbravolamas@gmail.com">manuelbravolamas@gmail.com</a>
+        <a href="mailto:m@manuellamas.com">m@manuellamas.com</a>
     </p>
     <social>
         <p class="footer-links-section">
