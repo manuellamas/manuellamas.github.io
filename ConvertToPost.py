@@ -1,5 +1,5 @@
 import sys
-import os.path
+import os
 from os import listdir
 import datetime
 
@@ -218,7 +218,7 @@ if __name__ == "__main__":
         if sys.argv[-1].lower() == "all": # Run on all posts
             
             # Obsidian original MD location
-            vault_thoughts_directory = m_directory + "\\Sihlbi_World\\Thoughts"
+            # vault_thoughts_directory = m_directory + "\\Sihlbi_World\\Thoughts"
 
             # Website posts location
             posts_directory = program_directory + "\\source\\_posts"
@@ -249,3 +249,16 @@ if __name__ == "__main__":
         else: # Running on specific file with the given date
             note_date = sys.argv[-1]
             obsidianToPost(note_date)
+
+
+    confimationToRunFinalScripts = input("Run Jekyll build and RemoveHtmlExtension script? (Enter for Yes)")
+    if confimationToRunFinalScripts.lower() in ["", "yes"]:
+        # Run Jekyll build command
+        jekyllBuildOutput = os.popen('powershell -Command bundle exec jekyll build').read()
+        print(jekyllBuildOutput)
+        print("-----\nThe Jekyll Build command was executed")
+
+        # Run script to remove html extensions of the output files. Needed for my current configuration of NginX on Mlair
+        removeHtmlExtensionOutput = os.popen('powershell -Command py .\RemoveHtmlExtensionFromOutputFiles.py').read()
+        print(removeHtmlExtensionOutput)
+        print("-----\nThe RemoveHtmlExtensionFromOutputFiles python script was executed")
